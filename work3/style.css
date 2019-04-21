@@ -1,0 +1,134 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+img{
+    display: block;
+  max-width: 100%;
+  height: auto;
+
+}
+body{
+    font-family: "Playfair Display", sans-serif;
+   
+    font-size: 14px;
+    line-height: 21px
+} 
+.container{
+    display: block;
+    width: 900px;
+    margin:0 auto;
+}
+.page-header{
+    margin-bottom: 100px;
+}
+
+.page-nav{
+    padding: 75px 0 100px;
+}
+.site-navigation{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    list-style: none;
+    color: rgb(98, 98, 98);
+    text-align-last: center;
+}
+.site-navigation a:hover,
+.site-navigation a:focus{
+    color: rgb(104, 203, 248);
+}
+.site-navigation li{
+    display: inline-block;
+
+}
+.site-navigation li:not(:last-child){
+    margin-right: 100px;
+}
+.features{
+    margin: 0;
+    padding: 0;
+}
+.features-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+.features-list-item {
+    display: inline-block;
+    width: 421px;
+    margin-bottom: 128px;
+    
+}
+.features-list-item:nth-last-child(-n+2){
+    margin-bottom: 0;
+}
+
+.features-list-item:not(:nth-child(2n)){
+    margin-right: 30px;
+}
+.features-list-item img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 28px;
+}
+.features-list-item h2{
+    margin: 0 0 28px;
+    color: gray;
+    font-family: serif;
+    line-height: 20px;
+    font-size: 14px;
+    
+}
+.features-list-item h3{
+    margin: 0 0 36px;
+    color: gray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 24px;
+    font-size: 14px;
+    
+   
+}
+    .features-list-item p{
+        color: dimgrey;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 15px;
+        font-size: 14px;
+       
+    }
+    .features{
+        margin-bottom: 48px;
+    }
+    .page-footer{
+            display: block;
+            margin: 0 auto;
+            font-size: 20px;
+            font-family: "PlayfairDisplay";
+            text-align: center;
+            cursor: pointer;
+            margin-bottom: 50px;
+        }
+     .button-.button-load,
+     .button0.button-load{
+         background-color: azure;
+     }
+     .button-load{
+        border: 1px solid rgb(78, 75, 73);
+        margin: 0;
+        padding:18px 32px ;
+        text-transform: capitalize;
+     }
+
+     
+          
+    
+
+    
+
+
