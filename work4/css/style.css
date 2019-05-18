@@ -8,6 +8,7 @@ html {
 }
 
 body {
+  margin: 0;
   font-family: "Playfair Display", sans-serif;
   font-size: 14px;
 }
@@ -37,7 +38,6 @@ img {
 }
 .site-logo {
   display: inline-block;
-  margin-top: 5px;
 }
 
 .site-navigation {
@@ -54,6 +54,7 @@ color:  rgb(98, 202, 178);
 }
 
 .site-navigation a {
+  display: block;
   text-decoration: none;
 }
 .site-navigation li {
@@ -83,7 +84,7 @@ color:  rgb(98, 202, 178);
   margin-bottom: 90px;
 }
 .features {
-  margin: 0px 0 70px;
+  margin: 0px 0 100px;
 }
 .features-list {
   margin: 0;
@@ -104,7 +105,7 @@ color:  rgb(98, 202, 178);
   margin: 0 30px 0 0;
 }
 .card-info:nth-child(4n + 4) {
-  margin: 0 0 30px;
+  margin: 0;
 }
 .card:hover .info-card::before {
   left: 0;
@@ -130,11 +131,11 @@ color:  rgb(98, 202, 178);
   width: 200px;
   height: 40px;
   position: relative;
-  padding: 13px 0px 13px 13px;
+  line-height: 40px;
   margin: 0;
+  padding: 0 0 0 14px;
   vertical-align: middle;
   text-align: left;
-  background-color: rgb(50, 50, 50);
   color: rgb(255, 255, 255);
   font-size: 14px;
   font-family: MyriadPro, sans-serif;
@@ -144,9 +145,11 @@ color:  rgb(98, 202, 178);
   width: 55px;
   height: 40px;
   margin: 0;
-  padding: 14px;
+  padding: 0px;
+  line-height: 40px;
+  text-align: center;
   position: relative;
-  background-color: rgb(140, 140, 140);
+  background-color:rgba(255,255,255, .44); 
   color: rgb(255, 255, 255);
   font-size: 18px;
   font-family: MyriadPro, sans-serif;
@@ -181,6 +184,10 @@ color:  rgb(98, 202, 178);
   background-color: rgb(78, 198, 171);
   margin-bottom: 80px;
 }
+.article-list{
+  margin: 0;
+  padding: 0;
+}
 .article-list-item {
   float: left;
   display: block;
@@ -194,9 +201,6 @@ color:  rgb(98, 202, 178);
   width: 350px;
 }
 .headline-text {
-  display: block;
-  width: 250px;
-  margin-right: 0;
   font-family: MyriadPro-Regular, sans-serif;
   font-size: 14px;
   color: rgb(85, 82, 82);
@@ -215,11 +219,14 @@ color:  rgb(98, 202, 178);
   font-size: 14px;
   font-weight: normal;
   color: rgba(85, 82, 82);
+  margin: 0;
+  margin-bottom: 20px;
 }
 .more {
+  display: block;
+  width: 160px;
   padding: 20px 40px;
   text-decoration: none;
-  border: 1px solid rgb(78, 198, 171);
   background-color: rgb(78, 198, 171);
   color: rgb(231, 247, 244);
   font-size: 16px;
