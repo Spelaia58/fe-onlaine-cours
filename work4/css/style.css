@@ -10,7 +10,6 @@ html {
 body {
   font-family: "Playfair Display", sans-serif;
   font-size: 14px;
-  line-height: 21px;
 }
 .visually-hidden {
   position: absolute;
@@ -49,10 +48,11 @@ img {
   padding: 0;
 }
 
-.site-navigation a:hover,
-:focus {
-  color: rgb(26, 188, 156);
+.site-navigation li :hover, 
+.site-navigation li:focus {
+color:  rgb(98, 202, 178);
 }
+
 .site-navigation a {
   text-decoration: none;
 }
@@ -64,17 +64,11 @@ img {
   margin-right: 20px;
 }
 .headline {
-  width: 1110px;
-  margin: 0 auto;
   text-align: center;
 }
 .headline h2 {
-  display: block;
-  width: 1110px;
-  height: 35px;
   margin: 0 auto;
   color: rgba(81, 81, 81, 255);
-  text-align: center;
   font-family: Roboto-Black, AdobeInvisFont, MyriadPro-Regular, sans-serif;
   font-size: 48px;
   margin-bottom: 30px;
@@ -89,60 +83,61 @@ img {
   margin-bottom: 90px;
 }
 .features {
-  margin: 0px 0 100px;
+  margin: 0px 0 70px;
 }
 .features-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+.card-info {
+  float: left;
+  width: 255px;
+  margin: 0 30px 30px 0;
+}
 .card {
-  float: left;
-  width: 255px;
+  margin: 0 auto;
   list-style: none;
+  overflow: hidden;
 }
-.card:not(:nth-child(4n)) {
-  margin-right: 26px;
+.card-info:nth-last-child(-n + 4) {
+  margin: 0 30px 0 0;
 }
-.card::nth-child(n + 4) {
-  margin-bottom: 30px;
+.card-info:nth-child(4n + 4) {
+  margin: 0 0 30px;
 }
-
+.card:hover .info-card::before {
+  left: 0;
+}
 .info-card {
+  margin: 0 auto;
+  position: relative;
+  background-color: rgb(50, 50, 50);
   width: 255px;
 }
-
-.product-name:hover,
-:before {
-  display: block;
-  float: left;
-  width: 200px;
+.info-card::before {
+  content: '';
+  position: absolute;
+  transition: all 200ms;
+  top: 0;
+  left: -100%;
   height: 40px;
-  font-size: 13px;
-  text-align: left;
-  background-color: rgb(87, 206, 182);
+  width: 100%;
+  background-color: rgb(26, 188, 156);
 }
-
 .product-name {
   float: left;
   width: 200px;
   height: 40px;
+  position: relative;
   padding: 13px 0px 13px 13px;
   margin: 0;
   vertical-align: middle;
-  margin-bottom: 30px;
   text-align: left;
   background-color: rgb(50, 50, 50);
   color: rgb(255, 255, 255);
   font-size: 14px;
   font-family: MyriadPro, sans-serif;
-}
-.price:hover,
-:before {
-  float: right;
-  width: 55px;
-  height: 40px;
-  background-color: rgba(19, 211, 211, 0.596);
 }
 .price {
   float: right;
@@ -150,7 +145,7 @@ img {
   height: 40px;
   margin: 0;
   padding: 14px;
-  margin-bottom: 30px;
+  position: relative;
   background-color: rgb(140, 140, 140);
   color: rgb(255, 255, 255);
   font-size: 18px;
@@ -189,6 +184,7 @@ img {
 .article-list-item {
   float: left;
   display: block;
+  margin: 0px 0 40px;
   list-style: none;
 }
 .article-list-item:not(:last-child) {
@@ -196,7 +192,6 @@ img {
 }
 .article {
   width: 350px;
-  margin: 0px 0 40px;
 }
 .headline-text {
   display: block;
@@ -216,17 +211,12 @@ img {
   background-color: rgb(31, 221, 183);
 }
 .paragraph {
-  display: block;
-  width: 335px;
   font-family: MyriadPro, sans-serif;
   font-size: 14px;
   font-weight: normal;
   color: rgba(85, 82, 82);
-  text-align: left;
 }
 .more {
-  width: 160px;
-  height: 50px;
   padding: 20px 40px;
   text-decoration: none;
   border: 1px solid rgb(78, 198, 171);
