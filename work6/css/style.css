@@ -23,20 +23,22 @@ img {
   height: auto;
 }
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .page-header {
   padding-bottom: 115px;
+  padding-top: 28px;
 }
 .page-nav {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
-.site-navigetion {
+.site-navigetion  {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 490px;
   margin: 0;
   padding: 0;
@@ -60,14 +62,14 @@ img {
 .site-navigetion a:after {
   display: block;
   content: "";
-  width: 50px;
+  width: 100%;
   height: 3px;
   background-color: rgb(246, 161, 161);
   margin-top: 10px;
   opacity: 0;
 }
 .site-navigetion a:hover:after {
-  transition: color 0.5s linear;
+  transition: color 0.2s linear;
   opacity: 1;
 }
 .features {
@@ -99,16 +101,6 @@ img {
   margin: 0 auto;
   margin-top: 40px;
 }
-.team-features::after {
-  display: block;
-  content: "";
-  width: 100%;
-  height: 2px;
-  background-color: rgb(229, 229, 229);
-  margin-top: 85px;
-  margin-bottom: 10px;
-}
-
 .italics {
   display: block;
   padding-bottom: 25px;
@@ -182,6 +174,9 @@ img {
   color: rgb(179, 179, 179);
   line-height: 1.6;
 }
+.team-features{
+  margin-bottom: 80px;
+}
 .team {
   margin: 0;
   font-size: 30px;
@@ -189,7 +184,7 @@ img {
   color: rgb(51, 51, 51);
   text-align: center;
 }
-.text {
+.text{
   margin: 0;
   text-align: center;
   padding-top: 45px;
@@ -226,6 +221,7 @@ img {
   width: 100%;
   height: 470px;
   z-index: 1;
+  transition-duration: 1s;
 }
 .button {
   position: absolute;
@@ -235,7 +231,9 @@ img {
 .card:hover .overlay {
   display: block;
   box-shadow: 10px 10px rgb(149, 225, 211);
+  transition-duration: 1s;
   opacity: 1;
+
 }
 .facebook {
   display: inline-block;
@@ -264,6 +262,7 @@ img {
 }
 .overlay .btn:hover {
   background-color: rgb(149, 225, 211);
+   transition-duration: 1s;
 }
 .team-list-image {
   margin-bottom: 25px;
@@ -287,10 +286,16 @@ img {
   font-style: italic;
   line-height: 1.6;
 }
+.footer{
+ 
+  border-top: 2px solid  rgb(229, 229, 229);
+  margin-bottom: 10px;
+}
 .page-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 25px;
 }
 .paragraf {
   margin: 0;
@@ -300,6 +305,10 @@ img {
   color: rgb(51, 51, 51);
   line-height: 3.5;
   text-align: left;
+}
+.link-prg{
+  color: rgb(245, 145, 145);
+  text-decoration: none;
 }
 .form {
   display: flex;
@@ -316,14 +325,19 @@ img {
   line-height: 1.6;
   text-align: left;
 }
-.btn-load {
+.btn-load{
   width: 150px;
   height: 45px;
   margin: 0;
   padding: 0;
   border: none;
+  background-color: rgb(149, 225, 211); 
+}
+.link-btn{
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   color: rgb(255, 255, 255);
-  background-color: rgb(149, 225, 211);
+  text-decoration: none;
 }
+
+
