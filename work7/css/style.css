@@ -128,6 +128,7 @@ s .site-navigetion a:hover:after {
   background-color: rgba(34, 34, 34, 1);
   background-repeat: no-repeat;
   background-position: right;
+  margin-bottom: 20px;
 }
 
 .contact {
@@ -147,4 +148,42 @@ s .site-navigetion a:hover:after {
   line-height: 1.2;
   text-align: center;
   color: rgb(101, 101, 101);
+}
+
+.form-input {
+  width: 455px;
+  height: 215px;
+}
+.info {
+  margin: 0;
+  width: 455px;
+  height: 55px;
+  border: none;
+  color: rgb(187, 187, 187);
+  margin-bottom: 25px;
+}
+.comment {
+  display: block;
+
+  width: 455px;
+  height: 210px;
+  background-color: #ffffff;
+}
+.comment-text {
+  margin: 0;
+  border: none;
+  color: rgb(187, 187, 187);
+}
+.btn {
+  width: 240px;
+  height: 65px;
+  margin-top: 30px;
+}
+.btn-message {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0;
+  color: #ffffff;
+  background-color: rgb(254, 209, 54);
 }
