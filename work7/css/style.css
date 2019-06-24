@@ -6,6 +6,26 @@ html {
 *::after {
   box-sizing: inherit;
 }
+@font-face{
+  font-family: Montserrat;
+  src: url(../шрифт/шрифты/montserrat\ regular14/);
+}
+@font-face{
+  font-family:Droid Serif ;
+  src: url(../шрифт/шрифты/droidserif/DroidSerif-Italic.ttf);
+}
+@font-face{
+  font-family: Droid serif;
+  src: url(../шрифт/шрифты/droidserif/DroidSerif-Italic.ttf)
+}
+@font-face{
+  font-family: Montserat;
+  src: url(../шрифт/шрифты/montserrat\ bold\ 40/);
+}
+@font-face{
+  font-family: 'Roboto', sans-serif;
+  src: url(../шрифт/шрифты/Roboto-Regular.ttf);
+}
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -63,7 +83,7 @@ s .site-navigetion a:hover:after {
   margin-bottom: 80px;
   text-align: center;
   color: rgb(34, 34, 34);
-  font-family: "Droid Serif", sans-serif;
+  font-family: "Montserrat bold", sans-serif;
   font-size: 40px;
   font-weight: Bold;
 }
@@ -115,16 +135,22 @@ s .site-navigetion a:hover:after {
   margin: 0;
   margin-bottom: 20px;
   text-align: center;
+  font-family: Montserat , sans-serif;
+  font-size: 18px;
 }
 .description {
   margin: 0;
   text-align: left;
+  color: rgb(155, 155, 155);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 .contact-us {
+  position: relative;
   padding-top: 110px;
   padding-bottom: 110px;
   padding-right: 20px;
-  background-image: url(../img/Map\Image.png);
+  background-image: url(../img/Map\ Image.png);
   background-color: rgba(34, 34, 34, 1);
   background-repeat: no-repeat;
   background-position: right;
@@ -136,23 +162,31 @@ s .site-navigetion a:hover:after {
   margin-bottom: 80px;
   text-align: center;
   color: rgb(255, 255, 255);
-  font-family: "Droid Serif", sans-serif;
+  font-family: "Montserat", sans-serif;
   font-size: 40px;
-  font-weight: Bold;
+  
 }
 .italic-us {
   display: block;
   padding-top: 25px;
   font-size: 16px;
-  font-family: "Droid Serif", cursive;
+  font-family: "Droid Serif", italic;
   line-height: 1.2;
   text-align: center;
   color: rgb(101, 101, 101);
 }
+.form{
+ display: flex;
+ justify-content: space-between;
+ width: 940px;
 
+}
 .form-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 455px;
-  height: 215px;
+  height: 210px;
 }
 .info {
   margin: 0;
@@ -160,21 +194,41 @@ s .site-navigetion a:hover:after {
   height: 55px;
   border: none;
   color: rgb(187, 187, 187);
-  margin-bottom: 25px;
+  padding-left: 20px;
+  font-family: Montserat,sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.email{
+  position: absolute;
+  top: 355px;
+}
+.subject{
+  position: absolute;
+  top: 435px;
 }
 .comment {
-  display: block;
-
+  position: relative;
+  background-color: rgb(255, 255, 255);
   width: 455px;
-  height: 210px;
-  background-color: #ffffff;
+  height: 210px; 
+
 }
-.comment-text {
+
+.text{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: rgb(187, 187, 187);
   margin: 0;
   border: none;
-  color: rgb(187, 187, 187);
+  font-family: Montserat,sans-serif;
+  font-size: 14px;
+  font-weight: bold;
 }
+
 .btn {
+  margin: 0 auto;
   width: 240px;
   height: 65px;
   margin-top: 30px;
@@ -184,6 +238,16 @@ s .site-navigetion a:hover:after {
   height: 100%;
   border: none;
   padding: 0;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   background-color: rgb(254, 209, 54);
+  font-family: Montserat,sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.form .input:valid{
+  background-color: green;
+}
+
+.input:invalid{
+ background-color:  red;
 }
