@@ -6,25 +6,23 @@ html {
 *::after {
   box-sizing: inherit;
 }
-@font-face{
+@font-face {
   font-family: Montserrat;
-  src: url(../шрифт/шрифты/montserrat\ regular14/);
+  src: url(../шрифт/шрифты/montserrat\regular14/);
 }
-@font-face{
-  font-family:Droid Serif ;
-  src: url(../шрифт/шрифты/droidserif/DroidSerif-Italic.ttf);
+@font-face {
+  font-family: Droid Serif;
+  src: url(../шрифт/шрифты/droidserif/DroidSerif-Italic.woff);
+  src: url(../шрифт/шрифты/droidserif/DroidSerif-Italic.woff2);
 }
-@font-face{
-  font-family: Droid serif;
-  src: url(../шрифт/шрифты/droidserif/DroidSerif-Italic.ttf)
-}
-@font-face{
+@font-face {
   font-family: Montserat;
-  src: url(../шрифт/шрифты/montserrat\ bold\ 40/);
+  src: url(../шрифт/шрифты/montserrat\bold\40/);
 }
-@font-face{
-  font-family: 'Roboto', sans-serif;
-  src: url(../шрифт/шрифты/Roboto-Regular.ttf);
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(../шрифт/шрифты/roboto/Roboto-Regular.woff);
+  src: url(../шрифт/шрифты/roboto/Roboto-Regular.woff2);
 }
 .visually-hidden {
   position: absolute;
@@ -48,9 +46,8 @@ html {
 }
 .site-navigetion {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 485px;
+  justify-content: flex-end;
+  flex-grow: 1;
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -65,20 +62,23 @@ html {
   line-height: 1.2;
   text-transform: uppercase;
 }
+.site-navigetion li:not(:last-child) {
+  margin-right: 35px;
+}
 
 .site-navigetion a:hover,
 .site-navigetion a:focus {
   color: rgb(254, 209, 54);
   transition: color 0.2s linear;
 }
-s .site-navigetion a:hover:after {
+.site-navigetion a:hover:after {
   transition: color 0.2s linear;
   opacity: 1;
 }
-.feautures {
-  margin-bottom: 100px;
+.features {
+  padding-bottom: 120px;
 }
-.services {
+.section-title {
   margin: 0;
   margin-bottom: 80px;
   text-align: center;
@@ -87,11 +87,11 @@ s .site-navigetion a:hover:after {
   font-size: 40px;
   font-weight: Bold;
 }
-.italic {
+.section-subtitle {
   display: block;
   padding-top: 20px;
   font-size: 16px;
-  font-family: "Droid Serif", cursive;
+  font-family: "Droid Serif", italic;
   color: rgb(51, 51, 51);
   line-height: 1.2;
   text-align: center;
@@ -105,22 +105,22 @@ s .site-navigetion a:hover:after {
   padding: 0;
 }
 .features-list-item {
-  flex-basis: 290px;
+  width: 33.33%;
   flex-grow: 0;
   flex-shrink: 0;
   padding-top: 100px;
-  margin-bottom: 120px;
   position: relative;
 }
 .features-list-item::before {
   position: absolute;
   top: 0;
-  left: 35%;
+  left: 50%;
   content: "";
   display: block;
   height: 75px;
   width: 75px;
   background-repeat: no-repeat;
+  transform: translateX(-50%);
 }
 .icon-basket::before {
   background-image: url(../img/icon-basket.png);
@@ -135,14 +135,14 @@ s .site-navigetion a:hover:after {
   margin: 0;
   margin-bottom: 20px;
   text-align: center;
-  font-family: Montserat , sans-serif;
+  font-family: Montserat, sans-serif;
   font-size: 18px;
 }
 .description {
   margin: 0;
   text-align: left;
   color: rgb(155, 155, 155);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
 .contact-us {
@@ -150,7 +150,7 @@ s .site-navigetion a:hover:after {
   padding-top: 110px;
   padding-bottom: 110px;
   padding-right: 20px;
-  background-image: url(../img/Map\ Image.png);
+  background-image: url(../img/Map\Image.png);
   background-color: rgba(34, 34, 34, 1);
   background-repeat: no-repeat;
   background-position: right;
@@ -158,15 +158,9 @@ s .site-navigetion a:hover:after {
 }
 
 .contact {
-  margin: 0;
-  margin-bottom: 80px;
-  text-align: center;
   color: rgb(255, 255, 255);
-  font-family: "Montserat", sans-serif;
-  font-size: 40px;
-  
 }
-.italic-us {
+.section-subtitle {
   display: block;
   padding-top: 25px;
   font-size: 16px;
@@ -175,18 +169,13 @@ s .site-navigetion a:hover:after {
   text-align: center;
   color: rgb(101, 101, 101);
 }
-.form{
- display: flex;
- justify-content: space-between;
- width: 940px;
-
+.inform {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
 }
 .form-input {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 455px;
-  height: 210px;
+  width: 50%;
 }
 .info {
   margin: 0;
@@ -195,59 +184,58 @@ s .site-navigetion a:hover:after {
   border: none;
   color: rgb(187, 187, 187);
   padding-left: 20px;
-  font-family: Montserat,sans-serif;
+  font-family: Montserat, sans-serif;
   font-size: 14px;
   font-weight: bold;
 }
-.email{
-  position: absolute;
-  top: 355px;
+.info:not(:last-child){
+  margin-bottom: 25px;
 }
-.subject{
-  position: absolute;
-  top: 435px;
+p{
+  margin: 0;
 }
 .comment {
-  position: relative;
-  background-color: rgb(255, 255, 255);
-  width: 455px;
-  height: 210px; 
-
-}
-
-.text{
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  color: rgb(187, 187, 187);
   margin: 0;
-  border: none;
-  font-family: Montserat,sans-serif;
+  color: rgb(187, 187, 187);
+  padding-left: 20px;
+  font-family: Montserat, sans-serif;
   font-size: 14px;
   font-weight: bold;
+  height: 210px;
+  border: none;
+  padding-top: 18px;
 }
-
 .btn {
   margin: 0 auto;
   width: 240px;
   height: 65px;
   margin-top: 30px;
 }
-.btn-message {
+.btn-send {
   width: 100%;
   height: 100%;
   border: none;
   padding: 0;
-  color: rgb(255, 255, 255);
-  background-color: rgb(254, 209, 54);
-  font-family: Montserat,sans-serif;
+  background-color: rgb(255, 255, 255);
+  color: rgb(254, 209, 54);
+  text-decoration: none;
+  font-family: Montserat, sans-serif;
   font-size: 18px;
   font-weight: bold;
 }
-.form .input:valid{
-  background-color: green;
+.btn-send:hover {
+  background-color: rgb(254, 209, 54);
+  color: rgb(255, 255, 255);
 }
-
-.input:invalid{
- background-color:  red;
+input:invalid {
+  border: solid 3px red;
+}
+input:valid {
+  border: solid 3px green;
+}
+textarea:invalid{
+  border: solid 3px red; 
+}
+textarea:valid{
+  border: solid 3px green;
 }
