@@ -1,0 +1,224 @@
+  *{
+    margin: 0;
+    padding: 0;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Bold.woff);
+  src: url(../fonts/Montserrat-Bold.woff2);
+}
+@font-face {
+  font-family: "MyriadPro-Regular";
+  src: url(../fonts/MyriadPro-Regular.woff);
+  src: url(../fonts/MyriadPro-Regular.woff2);
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url(../fonts/Roboto-Light.woff);
+  src: url(../fonts/Roboto-Light.woff2);
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.banner {
+  background-image: url(../img/banner.png);
+  height: 540px;
+  padding-top: 35px;
+}
+.button {
+  text-align: center;
+}
+.button a:hover {
+  content: "#";
+  width: 90px;
+  height: 35px;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  padding: 9.5px 16px;
+  user-select: none;
+  transition: color 0.2s linear;
+}
+.log {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.log:not(:last-child) {
+  margin-right: 40px;
+}
+a:lang(de) {
+  quotes: "\201C""\201D";
+}
+.logo {
+  text-align: center;
+  margin-top: 130px;
+  margin-bottom: 40px;
+}
+.site-logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.article {
+  text-align: center;
+}
+.headline {
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+.button {
+  margin-top: 14px;
+  margin-bottom: 25px;
+}
+.title-suggestion {
+  display: block;
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+.search-button {
+  padding: 16px 50px;
+  margin-top: 20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(241, 121, 123);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  border: 3px solid rgb(241, 121, 123);
+  border-radius: 50px;
+}
+.search-button:hover {
+  background-color: rgb(241, 121, 123);
+  color: rgb(255, 255, 255);
+  transition: color 0.2s linear;
+}
+.section-title {
+  padding-top: 75px;
+}
+.headline-2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 21.98px;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+  margin: 0 auto;
+
+  text-align: center;
+}
+.card-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.card-info {
+  justify-content: space-between;
+  text-align: center;
+}
+.card-img {
+  border-radius: 50%;
+}
+.card::after{
+  display: block;
+  content:url(../img/tv.png);
+  opacity: 1;
+  width: 33px;
+  height: 33px;
+  background-repeat: no-repeat;
+  background-color:rgb(255, 78, 80);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  text-align: center;
+  
+}
+.card{
+  position: relative;
+}
+.name {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13.97px;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+}
+.paragraph {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  font-size: 13.97px;
+  color: rgb(133, 133, 133);
+}
+.order-1{
+  order: -1;
+}
+.order-2{
+  order: -2;
+}
+.tv{
+  background-image: url(../img/tv.png);
+  background-color: rgb(255, 78, 80);
+  
+}
+.coffee{
+  background-image: url(../img/coffee.png);
+  background-color: rgb(28, 215, 173);
+}
+.buttle{
+  background-image: url(../img/buttle.png);
+  background-color: rgb(255, 165, 7);
+}
+.airliner{
+  background-image: url(../img/airliner.png);
+  background-color: rgb(78, 115, 219);
+ 
+}
+.info{
+  display: block;
+  height: auto;
+  max-width: 100%;
+  position: absolute;
+  bottom: 5px;
+  right: 90px;
+  width: 33px;
+  height: 33px;
+  background-repeat: no-repeat;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50px;
+}
+.btn {
+  text-align: center;
+  padding: 15px 73px;
+  color: rgb(255, 102, 103);
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  border: 2px solid rgb(241, 121, 123);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: rgb(255, 102, 103);
+  color: rgb(255, 255, 255);
+  transition: color 0.2s linear;
+}
