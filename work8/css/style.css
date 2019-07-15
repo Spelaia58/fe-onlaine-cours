@@ -1,6 +1,6 @@
-  *{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 *,
@@ -36,7 +36,10 @@
 }
 .banner {
   background-image: url(../img/banner.png);
+  background-color: rgba(34, 34, 34, 1);
+  background-position: center;
   height: 540px;
+  width: 100%;
   padding-top: 35px;
 }
 .button {
@@ -95,6 +98,9 @@ a:lang(de) {
   font-size: 14px;
   color: rgb(255, 255, 255);
 }
+.suggestion{
+  display: block;
+}
 .search-button {
   padding: 16px 50px;
   margin-top: 20px;
@@ -130,30 +136,50 @@ a:lang(de) {
   padding: 0;
   list-style: none;
   margin-top: 20px;
-  margin-bottom: 30px;
+}
+.card {
+  position: relative;
+  margin-bottom: 22px;;
 }
 .card-info {
-  justify-content: space-between;
+  margin-bottom: 30px;
   text-align: center;
 }
 .card-img {
   border-radius: 50%;
 }
-.card::after{
-  display: block;
-  content:url(../img/tv.png);
-  opacity: 1;
+.card::after {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  content:"";
   width: 33px;
   height: 33px;
-  background-repeat: no-repeat;
-  background-color:rgb(255, 78, 80);
-  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 1px 1px 2px 3px rgb(255, 255, 255);
   border-radius: 50%;
-  text-align: center;
-  
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.card{
-  position: relative;
+.icon-tv::after {
+  background-image: url(../img/tv.png);
+  background-color: rgb(255, 78, 80);
+ 
+}
+.card:hover::after{
+  box-shadow: 3px 3px 6px 6px rgb(255, 255, 255);
+}
+.icon-coffee::after {
+  background-image: url(../img/coffee.png);
+  background-color: rgb(28, 215, 173);
+}
+.icon-buttle::after {
+  background-image: url(../img/buttle.png);
+  background-color: rgb(255, 165, 7);
+}
+.icon-airliner::after {
+  background-image: url(../img/airliner.png);
+  background-color: rgb(78, 115, 219);
 }
 .name {
   margin: 0;
@@ -161,39 +187,25 @@ a:lang(de) {
   font-size: 13.97px;
   font-weight: bold;
   color: rgb(51, 51, 51);
+  margin-bottom: 22px;
 }
 .paragraph {
+  width: 200px;;
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
-  font-size: 13.97px;
+  font-size: 14px;
   color: rgb(133, 133, 133);
+  margin: 0 auto;
 }
-.order-1{
+.order-1 {
   order: -1;
 }
-.order-2{
+.order-2 {
   order: -2;
 }
-.tv{
-  background-image: url(../img/tv.png);
-  background-color: rgb(255, 78, 80);
-  
-}
-.coffee{
-  background-image: url(../img/coffee.png);
-  background-color: rgb(28, 215, 173);
-}
-.buttle{
-  background-image: url(../img/buttle.png);
-  background-color: rgb(255, 165, 7);
-}
-.airliner{
-  background-image: url(../img/airliner.png);
-  background-color: rgb(78, 115, 219);
- 
-}
-.info{
+
+.info {
   display: block;
   height: auto;
   max-width: 100%;
@@ -207,7 +219,6 @@ a:lang(de) {
   border-radius: 50px;
 }
 .btn {
-  text-align: center;
   padding: 15px 73px;
   color: rgb(255, 102, 103);
   background-color: rgb(255, 255, 255);
