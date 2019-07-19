@@ -1,0 +1,63 @@
+@media screen and (min-width:750px){
+     .banner{
+      height: 700px;
+     }
+    .page-nav{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      padding-top: 35px;
+      padding-bottom: 150px;
+    }
+    .logo{
+      padding: 0;
+    }
+    .navigation{
+      display: flex;
+      justify-content: space-around;
+      padding: 0;
+    }
+    .bottom{
+      display: block;
+    }
+    .headline{
+      font-family: "Montserrat", sans-serif;
+      font-size: 51.97px;
+    }
+    .title-suggestion{
+      padding-top: 2.8125rem;
+      font-size: 23.99px;
+}
+.suggestion{
+  display: inline-block;
+}
+.search-button{
+  padding: 16px 25px;
+}
+.card-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 35px;
+}
+.card-info:not(:nth-last-child(-n+2)){
+  margin-bottom: 60px;
+}
+.card-info{
+  margin: 0;
+  flex: 0 0 245px;
+}
+.card::after{
+  bottom: 0;
+  right: 70px;
+}
+.order-3{
+  order: -1;
+}
+.more{
+  text-align: center;
+  margin:  40px 0;
+}
+}
