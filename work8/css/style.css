@@ -39,6 +39,7 @@
   background-color: rgba(34, 34, 34, 1);
   background-position: center;
   height: 540px;
+  
  
 }
 .page-nav{
@@ -48,13 +49,16 @@
 .navigation{
   display: flex;
   justify-content: center;
-  height: 34px;
+ height: 34px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   list-style: none;
   text-align: center;
   padding-top: 14px;
   
+}
+.navigation li:not(:last-child){
+  margin-right: 30px;
 }
 .navigation a{
   display: block;
@@ -63,9 +67,7 @@
   padding: 10px 12px;
   
 }
-.navigation li:not(:last-child){
-  margin-right: 30px;
-}
+
 .navigation a:hover{
   border-radius: 50px;
   border: 2px solid rgb(255, 255, 255);
@@ -221,6 +223,9 @@ a:lang(de) {
   background-repeat: no-repeat;
   border: 2px solid rgb(255, 255, 255);
   border-radius: 50px;
+}
+.more{
+  text-align: center;
 }
 .btn {
   padding: 15px 73px;
