@@ -1,14 +1,17 @@
-@media screen and (min-width:750px){
+@media screen and (min-width:748px){
      .banner{
       height: 700px;
      }
+    .container{
+      min-width: 748px;
+    }
     .page-nav{
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-around;
-      padding-top: 35px;
-      padding-bottom: 150px;
+      justify-content: space-between;
+      padding: 35px 45px 150px;
+      
     }
     .logo{
       padding: 0;
@@ -39,15 +42,14 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-content: space-around;
   justify-content: center;
   margin-top: 35px;
 }
-.card-info:not(:nth-last-child(-n+2)){
-  margin-bottom: 60px;
-}
+
 .card-info{
   margin: 0;
-  flex: 0 0 245px;
+  flex: 0 0 235px;
 }
 .card::after{
   bottom: 0;
@@ -60,4 +62,9 @@
   text-align: center;
   margin:  40px 0;
 }
+}
+@media screen and (min-width:748px) and (max-width:938px){
+  .card-info:not(:nth-last-child(-n+2)){
+    margin-bottom: 60px;
+  }
 }

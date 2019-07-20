@@ -31,11 +31,14 @@
   margin: -1px;
 }
 .container {
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
 .banner {
+
   background-image: url(../img/banner.png);
+  background-repeat: no-repeat;
   background-color: rgba(34, 34, 34, 1);
   background-position: center;
   height: 540px;
@@ -65,6 +68,8 @@
   text-decoration: none;
   color: rgb(255, 255, 255);
   padding: 10px 12px;
+  border-radius: 50px;
+  border: 2px solid rgba(255, 255, 255, 0);
   
 }
 
@@ -112,17 +117,18 @@ a:lang(de) {
 .search-button {
   padding: 16px 50px;
   margin-top: 20px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(241, 121, 123);
+  background-color: rgb(241, 121, 123);
+  color: rgb(255, 255, 255);
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   cursor: pointer;
   border: 3px solid rgb(241, 121, 123);
   border-radius: 50px;
+  cursor: pointer;
 }
 .search-button:hover {
-  background-color: rgb(241, 121, 123);
-  color: rgb(255, 255, 255);
+  background-color:  rgb(255, 255, 255);
+  color:rgb(241, 121, 123);
   transition: color 0.2s linear;
 }
 .section-title {
@@ -130,7 +136,7 @@ a:lang(de) {
 }
 .headline-2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 21.98px;
+  font-size: 22px;
   font-weight: bold;
   color: rgb(51, 51, 51);
   margin: 0 auto;
@@ -191,7 +197,7 @@ a:lang(de) {
 .name {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  font-size: 13.97px;
+  font-size: 14px;
   font-weight: bold;
   color: rgb(51, 51, 51);
   margin-bottom: 22px;
@@ -226,19 +232,21 @@ a:lang(de) {
 }
 .more{
   text-align: center;
+  
 }
 .btn {
   padding: 15px 73px;
-  color: rgb(255, 102, 103);
-  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 102, 103);
   border-radius: 50px;
   border: 2px solid rgb(241, 121, 123);
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: bold;
+  cursor: pointer;
 }
 .btn:hover {
-  background-color: rgb(255, 102, 103);
-  color: rgb(255, 255, 255);
+  background-color:rgb(255, 255, 255);
+  color: rgb(255, 102, 103);
   transition: color 0.2s linear;
 }
