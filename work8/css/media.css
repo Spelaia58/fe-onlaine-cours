@@ -1,29 +1,52 @@
-
-@media screen and (min-width:748px){
+@media screen and (max-width:767px) and (min-width:320px){
+  .banner{
+    height: 540px;
+  }
+  .logo a{
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+  .navigation{
+    padding-top: 18px;
+  }
+ .card-info{
+    
+    margin-bottom: 30px;
+  }
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 20px;
+  }
+  .order-1 {
+    order: -1;
+  }
+  .order-2 {
+    order: -2;
+  }
+  
+}
+@media screen and (min-width:768px){
+  .container{
+    width: 748px;
+    margin: 0;
+  }
      .banner{
       height: 700px;
      }
-    .container{
-      min-width: 748px;
-    }
     .page-nav{
-      width: 670px;
+      width: 748px;
       margin: 0 auto;
-      display: flex;
-      flex-direction: row;
+     flex-direction: row;
       flex-wrap: nowrap;
       align-items: center;
-      justify-content: space-between;
-      padding: 35px 45px 150px;
+      padding-top: 35px; 
+      padding-bottom: 150px;
       
     }
-    .logo{
-      padding: 0;
-    }
-    .navigation{
-      display: flex;
-      justify-content: space-around;
-      padding: 0;
+    .article{
+      width: 768px;
     }
     .bottom{
       display: block;
@@ -31,10 +54,7 @@
     .headline{
       font-size: 52px;
     }
-    .title-suggestion{
-      padding-top: 2.8125rem;
-      font-size: 23.99px;
-}
+
 .suggestion{
   display: inline-block;
 }
@@ -42,34 +62,20 @@
   padding: 16px 25px;
 }
 .card-list{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: space-around;
-  justify-content: center;
-  margin-top: 35px;
-}
-
-.card-info{
-  margin: 0;
-  flex: 0 0 235px;
-}
-.card::after{
-  bottom: 0;
-  right: 70px;
-}
-.order-3{
-  order: -1;
+ display: flex;
+ flex-wrap: wrap;
+ margin-top: 35px;
 }
 .more{
   text-align: center;
   margin:  40px 0;
 }
 }
-@media screen and (min-width:748px) and (max-width:938px){
+@media screen and (max-width:938px) and (min-width:768px){
   .card-info:not(:nth-last-child(-n+2)){
     margin-bottom: 60px;
   }
+  
 }
 @media screen and (min-width:1440px){
   .page-nav{
