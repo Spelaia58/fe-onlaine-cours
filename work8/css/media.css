@@ -8,6 +8,7 @@
   }
   .navigation{
     padding-top: 18px;
+    margin: 0 auto;
   }
  .card-info{
     
@@ -27,19 +28,16 @@
   }
   
 }
-@media screen and (min-width:768px){
-  .container{
-    width: 748px;
-    margin: 0;
-  }
-     .banner{
-      height: 700px;
-     }
+@media screen and (max-width:939px) and (min-width:768px){
+  .banner{
+    height: 700px;
+   }
     .page-nav{
-      width: 748px;
+      width: 660px;
       margin: 0 auto;
      flex-direction: row;
       flex-wrap: nowrap;
+      justify-content: space-between;
       align-items: center;
       padding-top: 35px; 
       padding-bottom: 150px;
@@ -77,9 +75,4 @@
   }
   
 }
-@media screen and (min-width:1440px){
-  .page-nav{
-    width: 940px;
-    margin: 0 auto;
-  }
-}
+
