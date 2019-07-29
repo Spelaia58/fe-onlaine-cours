@@ -7,8 +7,8 @@
 *::before,
 *::after {
   box-sizing: inherit;
-} 
-body{
+}
+body {
   overflow-x: hidden;
 }
 @font-face {
@@ -35,14 +35,14 @@ body{
 }
 
 .banner {
- min-width: 320px;
+  min-width: 320px;
   background-image: url(../img/banner.png);
   background-repeat: no-repeat;
   background-color: rgba(34, 34, 34, 1);
   background-position: center;
 }
 .page-nav {
-  width: 300px;
+  width: 280px;
   margin: 0 auto;
   display: flex;
   flex-direction: column-reverse;
@@ -50,15 +50,14 @@ body{
 .navigation {
   display: flex;
   height: 34px;
-  
+
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   list-style: none;
   text-align: center;
- 
 }
 .navigation li:not(:last-child) {
-  margin-right: 20px;
+  margin-right:8px;
 }
 .navigation a {
   display: block;
@@ -78,34 +77,26 @@ a:lang(de) {
   quotes: "\201C""\201D";
 }
 .logo {
-  text-align: center;
-  
+  width: 185px;
+  letter-spacing: 0.03em;
 }
 .logo a {
-  display: block;
   text-decoration: none;
- 
 }
 .site-logo {
-  width: 280px;
-  margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   color: rgb(255, 255, 255);
 }
-.container {
-  width: 300px;
-  padding: 0 10px;
-  margin: 0 auto;
-}
+
 .article {
   width: 300px;
   margin: 0 auto;
-  
 }
 .headline {
   width: 300px;
   margin: 0 auto;
+
   font-size: 30px;
   font-family: "Montserrat", sans-serif;
   text-align: center;
@@ -121,43 +112,49 @@ a:lang(de) {
   color: rgb(233, 215, 204);
   text-align: center;
 }
-.src{
- text-align: center;
+.src {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
 }
-.search-button {
-  
-  padding: 16px 50px;
-  
-  background-color: rgb(241, 121, 123);
+.btn-style{
+  background-color: rgb(255, 78, 80);
   color: rgb(255, 255, 255);
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  margin: 20px auto;
-  border: 3px solid rgb(241, 121, 123);
-  border-radius: 50px;
-  
+  border: 3px solid rgb(255, 78, 80);
+  border-radius: 20px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 20px;
 }
-.search-button:hover {
+.btn-style:hover {
   background-color: rgb(255, 255, 255);
-  color: rgb(241, 121, 123);
+  color: rgb(255, 78, 80);
+  border: 3px solid rgb(255, 78, 80);
+  border-radius: 20px;
   transition: color 0.2s linear;
 }
-.section-title {
-  padding-top: 75px;
+.container {
+  width: 300px;
+  padding: 75px 10px 0;
+  margin: 0 auto;
 }
 .headline-2 {
+  width: 280px;
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: bold;
   color: rgb(51, 51, 51);
-margin-bottom: 20px;
+  margin-bottom: 20px;
   text-align: center;
   margin: 0 auto;
 }
-.card-list{
+.card-list {
   width: 280px;
   margin: 0 auto;
-  
+  list-style: none;
 }
 .card {
   position: relative;
@@ -165,18 +162,11 @@ margin-bottom: 20px;
   margin-bottom: 22px;
   margin: 0 auto;
 }
-.card-info {
-  
-  text-align: center;
-}
-.card-img {
-  border-radius: 50%;
-}
 .card::after {
   display: inline-block;
   position: absolute;
   bottom: 0;
-  right: 40px;
+  right: 20px;
   content: "";
   width: 33px;
   height: 33px;
@@ -185,6 +175,13 @@ margin-bottom: 20px;
   background-repeat: no-repeat;
   background-position: center;
 }
+.card-info {
+  text-align: center;
+}
+.card-img {
+  border-radius: 50%;
+}
+
 .icon-tv::after {
   background-image: url(../img/tv.png);
   background-color: rgb(255, 78, 80);
@@ -204,56 +201,39 @@ margin-bottom: 20px;
   background-image: url(../img/airliner.png);
   background-color: rgb(78, 115, 219);
 }
-.resume{
- 
+.resume {
+  width: 280px;
 }
 .name {
-
-margin: 22px auto;
+  width: 120px;
+  margin: 22px auto;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: bold;
   color: rgb(51, 51, 51);
-  
 }
 .paragraph {
-  
+  width: 230px;
+  margin: 0 auto;
+ 
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
   font-size: 14px;
   color: rgb(133, 133, 133);
-  
 }
-.info {
-  display: block;
-  height: auto;
-  max-width: 100%;
-  position: absolute;
-  bottom: 5px;
-  right: 90px;
-  width: 33px;
-  height: 33px;
-  background-repeat: no-repeat;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 50px;
-}
+
 .more {
+  width: 300px;
+  margin: 0 auto;
   text-align: center;
   margin-bottom: 55px;
 }
 .btn {
-  padding: 15px 73px;
-  color: rgb(255, 255, 255);
-  background-color: rgb(255, 102, 103);
-  border-radius: 50px;
-  border: 2px solid rgb(241, 121, 123);
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  cursor: pointer;
+  padding: 10px 71px;
 }
+
 .btn:hover {
   background-color: rgb(255, 255, 255);
-  color: rgb(255, 102, 103);
+  color: rgb(255, 78, 80);
   transition: color 0.2s linear;
 }

@@ -1,17 +1,17 @@
-@media screen and (max-width:767px) and (min-width:320px){
-  .banner{
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .banner {
     height: 540px;
   }
-  .logo a{
+  .logo {
+    margin: 0 auto;
     padding-top: 120px;
     padding-bottom: 40px;
   }
-  .navigation{
+  .navigation {
     padding-top: 18px;
     margin: 0 auto;
   }
- .card-info{
-    
+  .card-info {
     margin-bottom: 30px;
   }
   .card-list {
@@ -26,53 +26,111 @@
   .order-2 {
     order: -2;
   }
-  
 }
-@media screen and (max-width:939px) and (min-width:768px){
-  .banner{
+@media screen and (min-width: 768px){
+  .banner {
     height: 700px;
-   }
-    .page-nav{
-      width: 660px;
-      margin: 0 auto;
-     flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 35px; 
-      padding-bottom: 150px;
-      
-    }
-    .article{
-      width: 768px;
-    }
-    .bottom{
-      display: block;
-    }
-    .headline{
-      font-size: 52px;
-    }
-
-.suggestion{
-  display: inline-block;
+  }
+  .page-nav{
+    margin: 0 auto;
+    padding: 35px 0 150px; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .logo{
+    margin: 0;
+  }
+  .headline{
+    width: 505px; 
+    font-size: 52px;
+  }
+  .title-suggestion {
+    width: 505px;
+    padding-top: 35px;
+  }
+  .src {
+    width: 235px;
+  }
+  .search-button {
+    margin-top: 35px;
+    
+    
+  }
+  .headline-2 {
+    width: 510px;
+  }
+  .card-list{
+    display: flex;
+    margin-top: 35px;
+  }
+  .more{
+    margin: 40px auto;
+  }
+  .btn{
+    
+    padding: 10px 27.5px;
+  }
 }
-.search-button{
-  padding: 16px 25px;
-}
-.card-list{
- display: flex;
- flex-wrap: wrap;
- margin-top: 35px;
-}
-.more{
-  text-align: center;
-  margin:  40px 0;
-}
-}
-@media screen and (max-width:938px) and (min-width:768px){
-  .card-info:not(:nth-last-child(-n+2)){
-    margin-bottom: 60px;
+@media screen and (max-width: 939px) and (min-width: 768px) {
+  .page-nav {
+    width: 660px;
+    margin: 0 auto;
+  }
+  .article {
+    width: 768px;
   }
   
+  .container {
+    width: 748px;
+  }
+  .card-list {
+    width: 748px;
+    flex-wrap: wrap;
+    justify-content: center; 
+  }
+  .more {
+    text-align: center;
+    
+  }
 }
-
+@media screen and (max-width: 939px) and (min-width: 768px) {
+  .card-info:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width:940px){
+  .page-nav{
+    width: 920px; 
+  }
+  .article{
+    width: 920px;
+  }
+  .title-suggestion{
+    font-size: 24px;
+  }
+  .src{
+    cursor: pointer;
+  }
+  .container{
+    width: 920px;
+  }
+  .card-list{
+    width: 920px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .card-info{
+    width: 220px;
+  }
+  .resume{
+    width: 220px;
+  }
+  .paragraph{
+    width: 220px;
+  }
+  .btn{
+    cursor: pointer;
+  }
+}
