@@ -50,14 +50,14 @@
     width: 505px;
     padding-top: 35px;
   }
-  .src {
-    width: 235px;
+  .src{
+    width: 748px;
+    margin: 0 auto;
+    margin-top: 37px;
   }
-  .search-button {
-    margin-top: 35px;
-    
-    
-  }
+ .search-button{
+ 
+ }
   .headline-2 {
     width: 510px;
   }
@@ -68,10 +68,7 @@
   .more{
     margin: 40px auto;
   }
-  .btn{
-    
-    padding: 10px 27.5px;
-  }
+  
 }
 @media screen and (max-width: 939px) and (min-width: 768px) {
   .page-nav {
