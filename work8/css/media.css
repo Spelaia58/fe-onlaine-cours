@@ -4,15 +4,12 @@
   }
   .logo {
     margin: 0 auto;
-    padding-top: 120px;
+    padding-top: 110px;
     padding-bottom: 40px;
   }
   .navigation {
     padding-top: 18px;
     margin: 0 auto;
-  }
-  .card-info {
-    margin-bottom: 30px;
   }
   .card-list {
     display: flex;
@@ -25,6 +22,9 @@
   }
   .order-2 {
     order: -2;
+  }
+  .card-info:not(:last-child ){
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px){
@@ -43,21 +43,14 @@
     margin: 0;
   }
   .headline{
-    width: 505px; 
+    width: 100%; 
     font-size: 52px;
   }
   .title-suggestion {
-    width: 505px;
+    width: 100%;
     padding-top: 35px;
   }
-  .src{
-    width: 748px;
-    margin: 0 auto;
-    margin-top: 37px;
-  }
- .search-button{
  
- }
   .headline-2 {
     width: 510px;
   }
@@ -82,6 +75,9 @@
   .container {
     width: 748px;
   }
+  .card-info:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 60px;
+  }
   .card-list {
     width: 748px;
     flex-wrap: wrap;
@@ -92,17 +88,12 @@
     
   }
 }
-@media screen and (max-width: 939px) and (min-width: 768px) {
-  .card-info:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 60px;
-  }
-}
 @media screen and (min-width:940px){
   .page-nav{
     width: 920px; 
   }
   .article{
-    width: 920px;
+    width: 505px;
   }
   .title-suggestion{
     font-size: 24px;
@@ -121,13 +112,11 @@
   .card-info{
     width: 220px;
   }
-  .resume{
-    width: 220px;
-  }
   .paragraph{
     width: 220px;
   }
-  .btn{
+  .btn-style{
     cursor: pointer;
+  margin-top: 40px;
   }
 }
