@@ -150,7 +150,7 @@
     width: 180px;
     margin: 40px 0 70px;
   }
-  .btn{
+  .btn, .search-button{
     cursor: pointer;
   }
   
