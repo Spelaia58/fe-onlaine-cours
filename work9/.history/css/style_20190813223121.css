@@ -50,8 +50,12 @@ img{
   margin: 0;
 }
 .container{
-  padding-right: 14px;
-  padding-left: 14px;
+ margin-right: 14px;
+ margin-left: 14px;
+}
+.page-nav {
+  display: flex;
+  
 }
 .navigation {
   display: flex;

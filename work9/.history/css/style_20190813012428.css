@@ -38,7 +38,45 @@ img{
   height: 1px;
   margin: -1px;
 }
-
+.row {
+  display: flex;
+}
+.col-1 {
+  flex-basis: 8.33%;
+}
+.col-2 {
+  flex-basis: 16.666%;
+}
+.col-3 {
+  flex-basis: 25%;
+}
+.col-4 {
+  flex-basis: 33.333%;
+}
+.col-5 {
+  flex-basis: 41.666%;
+}
+.col-6 {
+  flex-basis: 50%;
+}
+.col-7 {
+  flex-basis: 58.333%;
+}
+.col-8 {
+  flex-basis: 66.666%;
+}
+.col-9 {
+  flex-basis: 75%;
+}
+.col-10 {
+  flex-basis: 83.333%;
+}
+.col-11 {
+  flex-basis: 91.666%;
+}
+.col-12 {
+  flex-basis: 100%;
+}
 .wrapper {
   min-width: 320px;
   height: 700px;
@@ -49,9 +87,14 @@ img{
   margin-bottom: 75px;
   margin: 0;
 }
-.container{
-  padding-right: 14px;
-  padding-left: 14px;
+.container {
+  min-width: 290px;
+  margin: 0 auto;
+
+}
+.page-nav {
+  display: flex;
+  flex-direction: column-reverse;
 }
 .navigation {
   display: flex;
@@ -60,13 +103,14 @@ img{
   font-size: 14px;
   list-style: none;
   text-align: center;
+  margin-bottom: 0;
 }
 .navigation li:not(:last-child) {
     margin-right: 10px;
   }
 .navigation a {
   display: block;
-  
+  width: 60px;
   text-decoration: none;
   color: rgb(255, 255, 255);
   padding: 10px 15px;
@@ -82,7 +126,6 @@ a:lang(de) {
   quotes: "\201C""\201D";
 }
 .logo {
-  text-align: center;
   letter-spacing: 0.03em;
 }
 .logo a {
@@ -102,7 +145,7 @@ a:hover{
   
 }
 .center{
- justify-content: center;
+  text-align: center;
 }
 .headline {
   font-family: "Montserrat", sans-serif;

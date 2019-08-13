@@ -53,6 +53,10 @@ img{
   padding-right: 14px;
   padding-left: 14px;
 }
+.page-nav {
+  display: flex;
+  
+}
 .navigation {
   display: flex;
   height: 34px;

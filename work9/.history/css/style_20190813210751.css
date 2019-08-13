@@ -50,11 +50,15 @@ img{
   margin: 0;
 }
 .container{
-  padding-right: 14px;
-  padding-left: 14px;
+ 
+}
+.page-nav {
+  display: flex;
+  flex-direction: column-reverse;
 }
 .navigation {
   display: flex;
+  width: 100%;
   height: 34px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -66,7 +70,7 @@ img{
   }
 .navigation a {
   display: block;
-  
+  width: 60px;
   text-decoration: none;
   color: rgb(255, 255, 255);
   padding: 10px 15px;
@@ -82,7 +86,6 @@ a:lang(de) {
   quotes: "\201C""\201D";
 }
 .logo {
-  text-align: center;
   letter-spacing: 0.03em;
 }
 .logo a {

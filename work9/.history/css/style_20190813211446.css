@@ -50,8 +50,11 @@ img{
   margin: 0;
 }
 .container{
-  padding-right: 14px;
-  padding-left: 14px;
+ 
+}
+.column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
 }
 .navigation {
   display: flex;
@@ -82,7 +85,6 @@ a:lang(de) {
   quotes: "\201C""\201D";
 }
 .logo {
-  text-align: center;
   letter-spacing: 0.03em;
 }
 .logo a {
