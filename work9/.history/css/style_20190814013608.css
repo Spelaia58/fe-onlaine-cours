@@ -46,6 +46,7 @@ img{
   background-repeat: no-repeat;
   background-color: rgba(34, 34, 34, 1);
   background-position: center;
+  padding-bottom: 75px;
  
 }
 .navigation {
@@ -112,7 +113,7 @@ a:hover{
   color: rgb(233, 215, 204);
   text-align: center;
 }
- 
+
 .btn-style {
   height: 40px;
   background-color: rgb(255, 78, 80);
@@ -137,10 +138,13 @@ a:hover{
   color: rgb(51, 51, 51);
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: 75px;
 }
 .list-item{
   margin-top: 75px;
+}
+.top-item{
+  
 }
 .card {
   position: relative;
@@ -191,7 +195,6 @@ a:hover{
   background-color: rgb(78, 115, 219);
 }
 .name {
-  margin: 0;
   margin-top: 22px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -199,7 +202,6 @@ a:hover{
   color: rgb(51, 51, 51);
 }
 .paragraph {
-  margin: 0;
   margin-top: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: lighter;

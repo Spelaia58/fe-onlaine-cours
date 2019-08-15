@@ -99,7 +99,7 @@
   }
 }
 @media (max-width: 767px) {
-  .team-cards[class*="col-"]:not(:last-child) {
+  .card-info[class*="col-"]:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -111,8 +111,8 @@
     padding: 45px 0 110px;
   }
 }
-  @media (min-width:768px) and (max-width:960px){
-    .team-cards[class*="col-"]:nth-child(-n+2) {
+  @media(min-width:768px) and (max-width:960px){
+    .team-cards[class*="col-"]:nth-child(-n+2){
     margin-bottom: 60px;
   }
 }

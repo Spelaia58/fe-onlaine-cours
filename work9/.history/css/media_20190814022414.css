@@ -1,0 +1,137 @@
+@media screen and (max-width: 767px) and (min-width: 320px){
+  .container{
+    min-width: 320px;
+}
+    .logo {
+        margin: 0 auto;
+        margin-top: 105px;
+        margin-bottom: 40px;
+      }
+    .navigation {
+        margin: 0 auto;
+        margin-top: 18px;
+      }
+      .headline {
+      
+        font-size: 30px;
+      }
+      .title-suggestion {
+        width: 240px;
+        margin-top: 25px;
+       font-size: 18px;
+      }
+      .more{
+          width: 100%;
+      }
+      .search-button{
+          width: 280px;
+        margin-top: 20px;
+      }
+      
+      .card-info {
+        width: 230px;
+      }
+      
+      
+      .search-button-more {
+        width: 280px;
+        margin: 30px 0 55px;
+        }
+    }
+    @media (min-width: 320px){
+      .page-nav{
+        display: flex; 
+      }
+    }
+      @media (max-width:767px){
+        .card-info[class*="col-"]:not(:last-child ){
+          margin-bottom: 30px;
+        }
+      }
+      @media(min-width: 768px){
+        .justify-content-md-between{
+          flex-direction: row-reverse;
+          align-items: center;
+          padding: 45px 0 110px;
+        }
+
+        }
+  
+        
+      
+    
+    @media screen and (min-width: 768px){
+    
+      .logo{
+        margin: 0;
+      }
+       
+      .headline{
+        
+        font-size: 52px;
+      }
+      .title-suggestion {
+        margin-top: 35px;
+       font-size: 24px;
+      }
+      .search{
+        text-align: center;
+      }
+      .search-button{
+        margin-top: 35px;
+      }
+      
+      .card-info{
+          margin: 0;
+      }
+      .order-3{
+          order:2;
+      }
+      .more{
+        text-align: center;
+      }
+    }
+    @media screen and (max-width: 959px) and (min-width: 768px) {
+      
+      .search-button{
+        width: 235px;
+      }
+      .card-info {
+        width: 235px;
+      }
+      .card-info:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 60px;
+      }
+      
+      .search-button-more{
+        width: 190px;
+        margin: 40px 0;
+      }
+      
+    }
+    @media screen and (min-width:960px){
+      
+    
+      .src{
+        cursor: pointer;
+      }
+      .search-button{
+        width: 225px;
+      }
+      .container{
+        min-width: 940px;
+      }
+      
+      .card-info{
+        width: 220px;
+      }
+      .search-button-more{
+        width: 180px;
+        margin: 40px 0 70px;
+      }
+      .search-button-more, .search-button{
+        cursor: pointer;
+      }
+      
+    }
+    

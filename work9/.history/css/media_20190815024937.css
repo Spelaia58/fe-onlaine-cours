@@ -69,6 +69,10 @@
   .card-info {
     width: 235px;
   }
+  .card-info:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 60px;
+  }
+
   .search-button-more {
     width: 190px;
     margin: 40px 0;
@@ -83,6 +87,10 @@
   }
   .container {
     min-width: 940px;
+  }
+
+  .card-info {
+    width: 220px;
   }
   .search-button-more {
     width: 180px;
@@ -99,7 +107,7 @@
   }
 }
 @media (max-width: 767px) {
-  .team-cards[class*="col-"]:not(:last-child) {
+  .card-info[class*="col-"]:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -111,8 +119,8 @@
     padding: 45px 0 110px;
   }
 }
-  @media (min-width:768px) and (max-width:960px){
-    .team-cards[class*="col-"]:nth-child(-n+2) {
+  @media(min-width:768px){
+    .card-info[class*="col-"]:not(:nth-child( -2+n)){
     margin-bottom: 60px;
   }
 }

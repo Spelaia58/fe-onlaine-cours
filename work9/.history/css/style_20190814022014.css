@@ -112,7 +112,9 @@ a:hover{
   color: rgb(233, 215, 204);
   text-align: center;
 }
- 
+ .search-button{
+  width: 280px;
+}
 .btn-style {
   height: 40px;
   background-color: rgb(255, 78, 80);
@@ -191,7 +193,6 @@ a:hover{
   background-color: rgb(78, 115, 219);
 }
 .name {
-  margin: 0;
   margin-top: 22px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -199,10 +200,12 @@ a:hover{
   color: rgb(51, 51, 51);
 }
 .paragraph {
-  margin: 0;
   margin-top: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
   font-size: 14px;
   color: rgb(133, 133, 133);
+}
+.search-button-more{
+  width: 280px;
 }
