@@ -2,9 +2,6 @@
   .container {
     min-width: 320px;
   }
-  .page-nav {
-    display: flex;
-  }
   .logo {
     margin: 0 auto;
     margin-top: 105px;
@@ -40,6 +37,53 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    margin: 0;
+  }
+
+  .headline {
+    font-size: 52px;
+  }
+  .title-suggestion {
+    margin-top: 35px;
+    font-size: 24px;
+  }
+  .search {
+    text-align: center;
+  }
+  .search-button {
+    margin-top: 35px;
+  }
+
+  .order-3 {
+    order: 2;
+  }
+  .more {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  .search-button {
+    width: 235px;
+  }
+  .card-info {
+    width: 235px;
+  }
+  .search-button-more {
+    width: 190px;
+    margin: 40px 0;
+  }
+}
+@media screen and (min-width: 960px) {
+  
+  
+}
+@media (min-width: 320px) {
+  .page-nav {
+    display: flex;
+  }
+}
 @media (max-width: 767px) {
   .team-cards [class*="col-"]:not(:last-child) {
     margin-bottom: 30px;
@@ -52,38 +96,10 @@
     text-align: center;
     padding: 45px 0 110px;
   }
-  .logo {
-    margin: 0;
-  }
-
-  .headline {
-    font-size: 52px;
-  }
-  .title-suggestion {
-    margin-top: 35px;
-    font-size: 24px;
-  }
-  .search-button {
-    margin-top: 35px;
-  }
-
-  .order-3 {
-    order: 2;
-  }
 }
 @media screen and (min-width: 768px) and (max-width: 959px) {
   .team-cards [class*="col-"]:nth-child(-n + 2) {
     margin-bottom: 60px;
-  }
-  .search-button {
-    width: 235px;
-  }
-  .card-info {
-    width: 235px;
-  }
-  .search-button-more {
-    width: 190px;
-    margin: 40px 0;
   }
 }
 @media screen and (min-width: 960px) {

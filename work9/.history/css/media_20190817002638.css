@@ -2,9 +2,6 @@
   .container {
     min-width: 320px;
   }
-  .page-nav {
-    display: flex;
-  }
   .logo {
     margin: 0 auto;
     margin-top: 105px;
@@ -40,18 +37,7 @@
   }
 }
 
-@media (max-width: 767px) {
-  .team-cards [class*="col-"]:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-@media (min-width: 768px) {
-  .justify-content-md-between {
-    flex-direction: row-reverse;
-    align-items: center;
-    text-align: center;
-    padding: 45px 0 110px;
-  }
+@media screen and (min-width: 768px) {
   .logo {
     margin: 0;
   }
@@ -63,12 +49,40 @@
     margin-top: 35px;
     font-size: 24px;
   }
+  .search {
+    text-align: center;
+  }
   .search-button {
     margin-top: 35px;
   }
 
   .order-3 {
     order: 2;
+  }
+  .more {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 959px) and (min-width: 768px) {
+ 
+}
+
+@media (min-width: 320px) {
+  .page-nav {
+    display: flex;
+  }
+}
+@media (max-width: 767px) {
+  .team-cards [class*="col-"]:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .justify-content-md-between {
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: center;
+    padding: 45px 0 110px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 959px) {

@@ -63,12 +63,18 @@
     margin-top: 35px;
     font-size: 24px;
   }
+  .search {
+    text-align: center;
+  }
   .search-button {
     margin-top: 35px;
   }
 
   .order-3 {
     order: 2;
+  }
+  .more {
+    text-align: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 959px) {
