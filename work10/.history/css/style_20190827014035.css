@@ -42,19 +42,19 @@ img {
       from(rgba(252, 227, 138, 0.9)),
       to(rgba(244, 140, 130, 0.9))
     ),
-    url(../img/picture-min.jpg);
+    url(../img/picture.jpg);
   background-image: -o-linear-gradient(
       bottom,
       rgba(252, 227, 138, 0.9) 0%,
       rgba(244, 140, 130, 0.9) 100%
     ),
-    url(../img/picture-min.jpg);
+    url(../img/picture.jpg);
   background-image: linear-gradient(
       0deg,
       rgba(252, 227, 138, 0.9) 0%,
       rgba(244, 140, 130, 0.9) 100%
     ),
-    url(../img/picture-min.jpg);
+    url(../img/picture.jpg);
   height: 1000px;
   background-size: cover;
   background-position: center;
