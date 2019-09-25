@@ -1,0 +1,33 @@
+.services-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 65px;
+}
+
+.services-list-item {
+  flex-basis: 300px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding-left: 80px;
+  position: relative;
+}
+
+.services-list-item:not(:nth-child(n + 4)) {
+  margin-bottom: 100px;
+}
+
+.services-list-item::before {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  content: '';
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}

@@ -1,0 +1,13 @@
+.services__subtitle {
+  margin-top: 55px;
+}
+
+.services__subtitle::after {
+  display: block;
+  content: '';
+  width: 60px;
+  height: 3px;
+  background-color: rgb(243, 129, 129);
+  margin: 0 auto;
+  margin-top: 40px;
+}

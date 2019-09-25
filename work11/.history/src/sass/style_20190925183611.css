@@ -1,0 +1,208 @@
+
+.team__card {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  display: none;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(252, 227, 138, 0.9)),
+    to(rgba(244, 140, 130, 0.9))
+  );
+  background-image: -o-linear-gradient(
+    bottom,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(244, 140, 130, 0.9) 100%
+  );
+  background-image: linear-gradient(
+    0deg,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(244, 140, 130, 0.9) 100%
+  );
+  opacity: 0;
+  position: absolute;
+  -webkit-transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
+  width: 100%;
+  height: 470px;
+  z-index: 1;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+.social-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 205px;
+  left: 78px;
+}
+
+.social-icon svg {
+  display: block;
+  width: 25px;
+  height: 29px;
+  fill: rgb(243, 129, 129);
+}
+
+.social-icon a:hover svg {
+  fill: rgb(255, 255, 255);
+}
+
+.team__card:hover .overlay {
+  display: block;
+  -webkit-box-shadow: 10px 10px rgb(149, 225, 211);
+  box-shadow: 10px 10px rgb(149, 225, 211);
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  opacity: 1;
+}
+
+.btn-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 55px;
+  width: 55px;
+  background-color: rgb(252, 227, 138);
+}
+
+.overlay .btn-icon:hover {
+  background-color: rgb(243, 129, 129);
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+.team-list-image {
+  margin-bottom: 25px;
+}
+
+.team-list-name {
+  margin-bottom: 15px;
+  text-align: center;
+  color: rgb(51, 51, 51);
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.team-list-occupation {
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Roboto';
+  color: rgb(153, 153, 153);
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.footer {
+  border-top: 2px solid rgb(229, 229, 229);
+  margin-bottom: 10px;
+  margin-top: 85px;
+}
+
+.footer__page-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.footer__paragraf {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: 'Montserrat';
+  color: rgb(51, 51, 51);
+  line-height: 3.5;
+  text-align: left;
+}
+
+.footer__link-prg {
+  color: rgb(245, 145, 145);
+  text-decoration: none;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+}
+
+.form__info {
+  width: 230px;
+  height: 39px;
+  font-size: 15px;
+  font-family: 'Roboto';
+  color: rgb(204, 204, 204);
+  font-style: italic;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.btn-subscribe {
+  height: 43px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: rgb(149, 225, 211);
+}
+
+.btn-subscribe__link-btn {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .icon-alarm::before {
+    background-image: url(../img/ALARM@2x.svg);
+  }
+
+  .icon-line::before {
+    background-image: url(../img/LINE-GRAPH@2x.svg);
+  }
+
+  .icon-computer::before {
+    background-image: url(../img/COMPUTER@2x.svg);
+  }
+
+  .icon-book::before {
+    background-image: url(../img/BOOK@2x.svg);
+  }
+
+  .icon-home::before {
+    background-image: url(../img/HOME@2x.svg);
+  }
+
+  .icon-img::before {
+    background-image: url(../img/IMAGE@2x.svg);
+  }
+}

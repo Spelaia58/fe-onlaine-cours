@@ -1,0 +1,25 @@
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .icon-alarm::before {
+    background-image: url(../img/ALARM@2x.svg);
+  }
+
+  .icon-line::before {
+    background-image: url(../img/LINE-GRAPH@2x.svg);
+  }
+
+  .icon-computer::before {
+    background-image: url(../img/COMPUTER@2x.svg);
+  }
+
+  .icon-book::before {
+    background-image: url(../img/BOOK@2x.svg);
+  }
+
+  .icon-home::before {
+    background-image: url(../img/HOME@2x.svg);
+  }
+
+  .icon-img::before {
+    background-image: url(../img/IMAGE@2x.svg);
+  }
+}

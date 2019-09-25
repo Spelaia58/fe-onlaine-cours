@@ -1,0 +1,12 @@
+.team-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.team-list-item {
+  flex-basis: 380px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
