@@ -1,4 +1,27 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .link {
   display: block;
   text-decoration: none;
@@ -207,22 +230,22 @@
   background-size: contain;
 }
 .icon-alarm::before {
-  background-image: url(../img/icons/features/icon-ALARM.svg);
+  background-image: url(../img/ALARM.svg);
 }
 .icon-line::before {
-  background-image: url(../img/icons/features/icon-LINE_GRAPH.svg);
+  background-image: url(../img/LINE-GRAPH.svg);
 }
 .icon-computer::before {
-  background-image: url(../img/icons/features/icon-COMPUTER.svg);
+  background-image: url(../img/COMPUTER.svg);
 }
 .icon-book::before {
-  background-image: url(../img/icons/features/icon-BOOK.svg);
+  background-image: url(../img/BOOK.svg);
 }
 .icon-home::before {
-  background-image: url(../img/icons/features/icon-HOME.svg);
+  background-image: url(../img/HOME.svg);
 }
 .icon-img::before {
-  background-image: url(../img/icons/features/icon-IMAGE.svg);
+  background-image: url(../img/IMAGE.svg);
 }
 .team__article--text {
   width: 980px;
