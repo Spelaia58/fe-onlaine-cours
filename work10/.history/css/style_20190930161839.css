@@ -1,12 +1,14 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 .visually-hidden {
   position: absolute;
@@ -20,21 +22,39 @@ img {
   max-width: 100%;
   height: auto;
 }
-.link{
+.link {
   display: block;
   text-decoration: none;
 }
+.list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 .wrapper {
+  background-image: -webkit-gradient(
+      linear,
+      left bottom, left top,
+      from(rgba(252, 227, 138, 0.9)),
+      to(rgba(244, 140, 130, 0.9))
+    ),
+    url(../img/picture-min.jpg);
+  background-image: -o-linear-gradient(
+      bottom,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgba(244, 140, 130, 0.9) 100%
+    ),
+    url(../img/picture-min.jpg);
   background-image: linear-gradient(
       0deg,
       rgba(252, 227, 138, 0.9) 0%,
       rgba(244, 140, 130, 0.9) 100%
     ),
-    url(../img/picture.jpg);
+    url(../img/picture-min.jpg);
   height: 1000px;
   background-size: cover;
   background-position: center;
@@ -44,30 +64,34 @@ img {
   padding-top: 38px;
 }
 .header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header-menu__menu-list{
+  width: 490px;
 }
 .menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 490px;
-  margin: 0;
-  padding: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
-  list-style: none;
 }
-.menu-list__link  {
-  display: block;
-  text-decoration: none;
+.header-menu
+.menu-list__link {
   color: rgb(255, 255, 255);
   line-height: 1.2;
   text-transform: uppercase;
-}
-.menu-icon {
-  align-self: flex-start;
 }
 .svg-icon {
   fill: rgb(255, 255, 255);
@@ -79,6 +103,8 @@ img {
 .menu-list__link:hover,
 .menu-list__link:focus {
   color: rgb(252, 227, 138);
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
   transition: color 0.2s linear;
 }
 .menu-list__link:after {
@@ -91,24 +117,27 @@ img {
   opacity: 0;
 }
 .menu-list__link:hover:after {
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
   transition: color 0.2s linear;
   opacity: 1;
 }
 .title {
-  width: 780px;
   margin: 0 auto;
 }
-.subtitle-1 {
+.wrapper__title{
+  width: 780px;
+}
+.title__subtitle-1 {
   display: block;
-
+  margin-bottom: 65px;
   font-size: 72px;
   font-family: "Kaushan Script", cursive;
   color: rgb(255, 255, 255);
   text-align: center;
 }
-.subtitle-2 {
+.title__subtitle-2 {
   display: block;
-
   font-size: 150px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -116,11 +145,12 @@ img {
   text-align: center;
   text-transform: uppercase;
   line-height: 0.9;
-}
-.btn {
-  text-align: center;
+  margin-bottom: 125px;
 }
 .button {
+  text-align: center;
+}
+.button__btn {
   width: 153px;
   height: 30px;
   border: 2px solid rgb(255, 255, 255);
@@ -131,14 +161,16 @@ img {
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
-.subtitle-text-1 {
+.services__subtitle-text-1,
+.team__subtitle-text-1 {
   display: block;
   font-size: 24px;
   font-family: "Kaushan Script", cursive;
   color: rgb(64, 64, 64);
   text-align: center;
 }
-.subtitle-text-2 {
+.services__subtitle-text-2,
+.team__subtitle-text-2 {
   display: block;
   font-size: 30px;
   font-weight: bold;
@@ -146,6 +178,10 @@ img {
   font-family: "Montserrat", sans-serif;
   color: rgb(51, 51, 51);
   text-align: center;
+  margin-top: 25px;
+}
+.services__subtitle{
+  margin-top: 55px;
 }
 .services__subtitle::after {
   display: block;
@@ -157,17 +193,24 @@ img {
   margin-top: 40px;
 }
 .services-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
- 
-  margin: 0;
-  padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 65px;
 }
 .services-list-item {
-  flex-basis: 300px;
-  flex-grow: 0;
-  flex-shrink: 0;
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   padding-left: 80px;
   position: relative;
 }
@@ -185,6 +228,17 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+.service-works{
+  color: rgb(51, 51, 51);
+  font-size: 14px;
+  font-family: "Montserrat regular", sans-serif;
+  text-transform: uppercase;
+}
+.services-article{
+  color: rgb(182, 182, 182);
+  font-size: 15px;
+  font-family: "Roboto reguiar", sans-serif;
 }
 .icon-alarm::before {
   background-image: url(../img/ALARM.svg);
@@ -204,7 +258,7 @@ img {
 .icon-img::before {
   background-image: url(../img/IMAGE.svg);
 }
-.subtitle__article {
+.team__article--text {
   width: 980px;
   margin: 0 auto;
   text-align: center;
@@ -215,19 +269,36 @@ img {
   color: rgb(153, 153, 153);
   line-height: 1.6;
 }
+.team__subtitle{
+  margin-top: 100px;
+}
+.team__subtitle::after {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: rgb(243, 129, 129);
+  margin: 0 auto;
+  margin-top: 40px;
+}
 .team-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .team-list-item {
-  flex-basis: 380px;
-  flex-grow: 0;
-  flex-shrink: 0;
+  -ms-flex-preferred-size: 380px;
+      flex-basis: 380px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
-.card {
+.team__card {
   position: relative;
   display: block;
   max-width: 100%;
@@ -235,60 +306,85 @@ img {
 }
 .overlay {
   display: none;
-  
+  background-image: -webkit-gradient(
+    linear,
+    left bottom, left top,
+    from(rgba(252, 227, 138, 0.9)),
+    to(rgba(244, 140, 130, 0.9))
+  );
+  background-image: -o-linear-gradient(
+    bottom,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(244, 140, 130, 0.9) 100%
+  );
   background-image: linear-gradient(
     0deg,
     rgba(252, 227, 138, 0.9) 0%,
-    rgba(244, 140, 130, 0.9) 100%);
+    rgba(244, 140, 130, 0.9) 100%
+  );
   opacity: 0;
   position: absolute;
-  transform: translate(-10px, -10px);
+  -webkit-transform: translate(-10px, -10px);
+      -ms-transform: translate(-10px, -10px);
+          transform: translate(-10px, -10px);
   width: 100%;
   height: 470px;
   z-index: 1;
-  transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
 }
-.button-icon  {
+.social-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   top: 205px;
   left: 78px;
-  list-style: none;
 }
-.button-icon svg {
+.social-icon svg {
   display: block;
   width: 25px;
   height: 29px;
   fill: rgb(243, 129, 129);
 }
-.button-icon a:hover svg{
+.social-icon a:hover svg {
   fill: rgb(255, 255, 255);
 }
-.card:hover .overlay {
+.team__card:hover .overlay {
   display: block;
-  box-shadow: 10px 10px rgb(149, 225, 211);
-  transition-duration: 1s;
+  -webkit-box-shadow: 10px 10px rgb(149, 225, 211);
+          box-shadow: 10px 10px rgb(149, 225, 211);
+  -webkit-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
   opacity: 1;
 }
 
 .btn-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 55px;
   width: 55px;
   background-color: rgb(252, 227, 138);
 }
 .overlay .btn-icon:hover {
   background-color: rgb(243, 129, 129);
-  transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
 }
 .team-list-image {
   margin-bottom: 25px;
 }
 .team-list-name {
-  margin: 0;
-  padding: 0;
   margin-bottom: 15px;
   text-align: center;
   color: rgb(51, 51, 51);
@@ -296,8 +392,6 @@ img {
   font-family: "Montserrat", sans-serif;
 }
 .team-list-occupation {
-  margin: 0;
-  padding: 0;
   text-align: center;
   font-size: 15px;
   font-family: "Roboto";
@@ -308,14 +402,21 @@ img {
 .footer {
   border-top: 2px solid rgb(229, 229, 229);
   margin-bottom: 10px;
+  margin-top: 85px;
 }
-.page-footer {
+.footer__page-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 25px;
 }
-.paragraf {
+.footer__paragraf {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -324,18 +425,19 @@ img {
   line-height: 3.5;
   text-align: left;
 }
-.link-prg {
+.footer__link-prg {
   color: rgb(245, 145, 145);
   text-decoration: none;
 }
 .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   float: left;
 }
-.type {
+.form__info {
   width: 230px;
   height: 39px;
-
   font-size: 15px;
   font-family: "Roboto";
   color: rgb(204, 204, 204);
@@ -343,21 +445,22 @@ img {
   line-height: 1.6;
   text-align: left;
 }
-.btn-load {
-  width: 150px;
+
+.btn-subscribe {
   height: 43px;
   margin: 0;
   padding: 0;
   border: none;
   background-color: rgb(149, 225, 211);
 }
-.link-btn {
+.btn-subscribe__link-btn {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .icon-alarm::before {
     background-image: url(../img/ALARM@2x.svg);
   }
