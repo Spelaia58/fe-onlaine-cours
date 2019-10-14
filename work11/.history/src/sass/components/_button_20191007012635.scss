@@ -1,0 +1,15 @@
+.button {
+  text-align: center;
+}
+
+.button__btn {
+  width: 13%;
+  height: 30px;
+  border: 2px solid $main-color-banner;
+  background-color: $main-color-hove;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: $main-color-banner;
+}

@@ -1,0 +1,16 @@
+.form {
+  width: 32%;
+  display: flex;
+  float: left;
+}
+
+.form__info {
+  width: 61%;
+  height: 39px;
+  font-size: 15px;
+  font-family: 'Roboto';
+  color: $color-form-info;
+  font-style: italic;
+  line-height: 1.6;
+  text-align: left;
+}

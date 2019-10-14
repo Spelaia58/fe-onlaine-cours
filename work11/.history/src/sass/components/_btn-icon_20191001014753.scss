@@ -1,0 +1,13 @@
+.btn-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 55px;
+  background-color: rgb(252, 227, 138);
+}
+
+.overlay .btn-icon:hover {
+  background-color: rgb(243, 129, 129);
+  transition-duration: 1s;
+}
