@@ -5,3 +5,11 @@
     @extend %line;
   }
 }
+
+.team__subtitle-text-1 {
+  @extend %subtitle-text-1;
+}
+
+.team__subtitle-text-2 {
+  @extend %subtitle-text-2;
+}

@@ -10,8 +10,9 @@ $team-article-color: rgb(153, 153, 153);
 $color-box-shadow: rgb(149, 225, 211);
 $color-border: rgb(229, 229, 229);
 $color-link-footer: rgb(245, 145, 145);
-$color-form-info: rgb(204, 204, 204);
+$color-form-info: rgb(8, 8, 8);
 $width: 100%;
+$padding-top: 45px;
 
 %line {
   display: block;
@@ -21,4 +22,29 @@ $width: 100%;
   background-color: $bg-color-team-after;
   margin: 0 auto;
   margin-top: 40px;
+} 
+
+%settings{
+  color: $main-color-banner;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+%subtitle-text-1{
+  display: block;
+  font-size: 24px;
+  font-family: 'Kaushan Script', cursive;
+  color: $main-color-section;
+  text-align: center;
+}
+
+%subtitle-text-2{
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  color: $secondary-color-section;
+  text-align: center;
+  margin-top: 25px;
 }

@@ -1,7 +1,16 @@
+.services__subtitle-text-1 {
+  @extend %subtitle-text-1;
+}
+
+.services__subtitle-text-2 {
+  @extend %subtitle-text-2;
+}
+
 .services__subtitle {
   margin-top: 55px;
 }
 
 .services__subtitle::after {
- @extend %line;
+  @extend %line;
 }
+

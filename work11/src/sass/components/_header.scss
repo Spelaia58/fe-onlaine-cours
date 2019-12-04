@@ -2,3 +2,12 @@
   padding-bottom: 170px;
   padding-top: 38px;
 }
+
+.header-menu {
+  @include flex("all");
+  @extend %settings;
+}
+
+.header-menu__menu-list {
+  width: $width - 59%;
+}
