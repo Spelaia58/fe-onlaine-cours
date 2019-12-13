@@ -1,17 +1,15 @@
 /*
- * Все паршалы импортировать в этот файл
- */
-
-@import 'normalize.scss';
-@import 'base.scss';
-@import 'helpers/variables';
-@import 'helpers/mixins';
+   Import partials below
+*/
+//@import './normalize';
+//@import 'helpers/variables';
+//@import 'helpers/mixins';
 
 //components/
 
-@import 'components/link-list';
-@import 'components/container';
-@import 'components/wrapper';
+//@import 'components/link-list';
+//@import 'components/container';
+//@import 'components/wrapper';
 @import 'components/header';
 @import 'components/menu-list';
 @import 'components/title';

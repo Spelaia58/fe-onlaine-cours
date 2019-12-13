@@ -1,9 +1,7 @@
 /*
- * Все паршалы импортировать в этот файл
- */
-
-@import 'normalize.scss';
-@import 'base.scss';
+   Import partials below
+*/
+@import './normalize';
 @import 'helpers/variables';
 @import 'helpers/mixins';
 
