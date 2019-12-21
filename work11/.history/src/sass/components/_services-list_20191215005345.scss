@@ -1,0 +1,81 @@
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 65px;
+}
+
+.services-list-item {
+  flex-basis: 25%;
+  padding-left: 80px;
+  position: relative;
+}
+
+.services__icon-- {
+  &::before {
+    @include pseudo($display: block, $content: '');
+    position: absolute;
+    top: 0;
+    left: 25px;
+    height: 35px;
+    width: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  
+  }
+
+  .icon-alarm::before {
+    background-image: url('/build/images/icon-ALARM.svg');
+  }
+
+  .icon-line::before {
+    background-image: url('/src/images/icon-ALARM.svg');
+  
+  }
+
+  .icon-computer::before {
+    background-image: url(/src/images/icon-COMPUTER.svg);
+  
+  }
+
+  .icon-book::before {
+    background-image: url(/src/images/icon-BOOK.svg);
+  
+  }
+
+  icon-home::before {
+    background-image: url(/src/images/icon-HOME.svg);
+  
+  }
+  
+  &::before {
+    background-image: url(/src/images/icon-IMAGE.svg);
+  
+  }
+} 
+
+//$icons: alarm, line, computer, book, home, img;
+
+//@include generate-pseudo-icons(
+//'services__icon--',
+// '$icons',
+// '../images/icon-',
+// 'svg');
+
+.services-list-item:not(:nth-child(n + 4)) {
+  margin-bottom: 100px;
+}
+
+.service-works {
+  color: $secondary-color-section;
+  font-size: 14px;
+  font-family: 'Montserrat regular', sans-serif;
+  text-transform: uppercase;
+}
+
+.services-article {
+  color: $tertiary-color-section;
+  font-size: 15px;
+  font-family: 'Roboto reguiar', sans-serif;
+}
