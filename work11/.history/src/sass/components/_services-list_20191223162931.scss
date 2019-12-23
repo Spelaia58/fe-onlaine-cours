@@ -48,27 +48,27 @@
     background-image: url('../images/icon-IMAGE.svg');
   }
   @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    &--alarm::before {
+    &::before {
       background-image: url(../images/icon-ALARM.svg);
     }
   
-    &--line::before {
+    &::before {
       background-image: url(../images/icon-LINE_GRAPH.svg);
     }
   
-    &--computer::before {
+    &::before {
       background-image: url(../images/icon-COMPUTER.svg);
     }
   
-    &--book::before {
+    &::before {
       background-image: url(../images/icon-BOOK.svg);
     }
   
-    &--home::before {
+    &::before {
       background-image: url(../images/icon-HOME.svg);
     }
   
-    &--img::before {
+    .icon-img::before {
       background-image: url(../images/icon-IMAGE.svg);
     }
   }
